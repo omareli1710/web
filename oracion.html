@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva -->
+    <title>¿Quieres Oración? - Iglesia Peniel</title> <!-- Título de la página -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Establece la fuente general */
+            margin: 0; /* Elimina el margen por defecto */
+            padding: 0; /* Elimina el padding por defecto */
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fondo degradado */
+            color: white; /* Color del texto */
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el encabezado */
+            color: white; /* Color del texto en el encabezado */
+            padding: 20px; /* Espaciado interior del encabezado */
+            text-align: center; /* Centra el texto en el encabezado */
+            border-bottom: 3px solid #ff4b5c; /* Línea decorativa en la parte inferior */
+        }
+        nav {
+            display: flex; /* Utiliza flexbox para la navegación */
+            justify-content: center; /* Centra los elementos de navegación */
+            background: rgba(0, 0, 0, 0.9); /* Fondo semitransparente para la barra de navegación */
+            padding: 10px 0; /* Espaciado interior de la barra de navegación */
+        }
+        nav a {
+            padding: 15px 20px; /* Espaciado interior de los enlaces */
+            color: white; /* Color del texto de los enlaces */
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            transition: background 0.3s; /* Efecto de transición para el color de fondo */
+            border-radius: 5px; /* Bordes redondeados para los enlaces */
+            margin: 0 10px; /* Margen entre los enlaces */
+        }
+        nav a:hover {
+            background: #ff4b5c; /* Color de fondo al pasar el mouse */
+        }
+        .container {
+            max-width: 600px; /* Ancho máximo del contenedor */
+            margin: 40px auto; /* Centra el contenedor */
+            padding: 20px; /* Espaciado interior del contenedor */
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            color: #333; /* Color del texto dentro del contenedor */
+        }
+        h2 {
+            color: #2575fc; /* Color del encabezado secundario */
+        }
+        label {
+            display: block; /* Muestra la etiqueta como un bloque */
+            margin-top: 10px; /* Margen superior de las etiquetas */
+        }
+        input[type="text"],
+        input[type="tel"],
+        textarea {
+            width: 100%; /* Ancho completo para los campos de entrada */
+            padding: 10px; /* Espaciado interior de los campos */
+            margin-top: 5px; /* Margen superior de los campos */
+            border: 1px solid #ccc; /* Bordes de los campos */
+            border-radius: 5px; /* Bordes redondeados para los campos */
+        }
+        input[type="submit"] {
+            background: #2575fc; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            border: none; /* Sin borde para el botón */
+            padding: 10px 20px; /* Espaciado interior del botón */
+            border-radius: 5px; /* Bordes redondeados para el botón */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            margin-top: 15px; /* Margen superior del botón */
+            transition: background 0.3s; /* Efecto de transición para el color de fondo */
+        }
+        input[type="submit"]:hover {
+            background: #ff4b5c; /* Color de fondo del botón al pasar el mouse */
+        }
+        footer {
+            text-align: center; /* Centra el texto en el pie de página */
+            padding: 20px; /* Espaciado interior del pie de página */
+            background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el pie de página */
+            color: white; /* Color del texto en el pie de página */
+            position: relative; /* Posición relativa para control de diseño */
+            bottom: 0; /* Alineación en la parte inferior */
+            width: 100%; /* Ancho completo del pie de página */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>¿Quieres Oración?</h1> <!-- Título principal de la página -->
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="horario.html">Horarios de Culto</a>
+    <a href="familia.html">Familia Pastoral</a>
+    <a href="oracion.html">¿Quieres Oración?</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="hacer.html">¿Qué Hacemos?</a>
+    <a href="donacion.html">Realizar Donación</a>
+    <a href="departamentos.html">Departamentos</a>
+</nav>
+
+<div class="container">
+    <h2>Formulario de Oración</h2> <!-- Encabezado secundario -->
+    <p>Si necesitas oración, por favor llena el siguiente formulario. Ten en cuenta que toda la información será tratada de manera discreta.</p>
+
+    <form action="#" method="post"> <!-- Formulario para solicitar oración -->
+        <label for="nombre">Nombre de la persona:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="peticion">Petición de oración:</label>
+        <textarea id="peticion" name="peticion" rows="4" required></textarea>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <input type="submit" value="Enviar Petición"> <!-- Botón de envío -->
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Iglesia Peniel - Asambleas de Dios Coatepeque. Todos los derechos reservados.</p> <!-- Información de derechos de autor -->
+</footer>
+
+</body>
+</html>
